@@ -9,10 +9,9 @@ describe('generator-react-component-dev-kit', () => {
       .then((dir) => {
         assert.file([
           'test-component/webpack.config.js',
-          'test-component/jsdoc.config.json',
-          'test-component/src/index.js',
-          'test-component/demo/default/index.js',
-          'test-component/demo/default/index.html',
+          'test-component/jest.config.js',
+          'test-component/tslint.json',
+          'test-component/src/index.tsx',
           'test-component/package.json',
         ]);
       });
