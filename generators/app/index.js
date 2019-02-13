@@ -4,6 +4,7 @@ const yosay = require('yosay');
 const changeCase = require('change-case');
 const glob = require('glob');
 const path = require('path');
+const validateNPMPkgName = require('validate-npm-package-name');
 
 module.exports = class extends Generator{
   prompting() {
@@ -30,6 +31,15 @@ module.exports = class extends Generator{
   }
 
   writing() {
+    if (!validateNPMPkgName(this.props.name).validForNewPackages) {
+      this.log(`${chalk.red(`The package name '${this.props.name}' is not valid!`)}`);
+      this.log('Pleas follow the naming rules and try again.');
+      this.log('https://www.npmjs.com/package/validate-npm-package-name#naming-rules');
+
+      return;
+    }
+
+
     const exportName = changeCase.pascalCase(this.props.name);
     const packageName = changeCase.paramCase(this.props.name);
 
