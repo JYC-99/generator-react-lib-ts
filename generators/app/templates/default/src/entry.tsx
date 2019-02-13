@@ -15,8 +15,8 @@ export class <%= exportName %> extends React.Component<
   constructor(props: I<%= exportName %>Props) {
     super(props);
 
-    this.states = {
-      // init states
+    this.state = {
+      // init stat
     };
   }
 
