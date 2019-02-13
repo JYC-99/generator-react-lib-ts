@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const changeCase = require('change-case');
 const glob = require('glob');
+const path = require('path');
 
 module.exports = class extends Generator{
   prompting() {
@@ -15,7 +16,13 @@ module.exports = class extends Generator{
         type: 'input',
         name: 'name',
         message: 'input a name for the library',
-        default: 'new-lib'
+        default: 'new-lib',
+      },
+      {
+        type: 'input',
+        name: 'path',
+        message: 'input path for your library',
+        default: './',
       }
     ]).then(function(props) {
       this.props = props;
@@ -28,7 +35,7 @@ module.exports = class extends Generator{
 
     this.fs.copyTpl(
       glob.sync(this.templatePath('**'), { dot: true }),
-      this.destinationPath(packageName),
+      this.destinationPath(path.join(this.props.path, packageName)),
       {
         packageName,
         exportName,
