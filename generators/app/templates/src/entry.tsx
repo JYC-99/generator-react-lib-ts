@@ -21,6 +21,8 @@ export class <%= exportName %> extends React.Component<
   }
 
   render() {
-    <div>Placeholder for <%= exportName %></div>
+    return (
+      <div>Placeholder for <%= exportName %></div>
+    );
   }
 }
