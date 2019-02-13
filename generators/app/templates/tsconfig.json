@@ -1,0 +1,17 @@
+{
+  "declarationFiles": true,
+  "sourceMap": true,
+  "target": "ES5",
+  "module": "amd",
+  "compilerOptions": {
+    "jsx": "react",
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
