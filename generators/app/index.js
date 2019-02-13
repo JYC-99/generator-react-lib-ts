@@ -22,7 +22,7 @@ module.exports = class extends Generator{
         type: 'input',
         name: 'path',
         message: 'input path for your library',
-        default: './',
+        default: '',
       }
     ]).then(function(props) {
       this.props = props;
@@ -33,8 +33,10 @@ module.exports = class extends Generator{
     const exportName = changeCase.pascalCase(this.props.name);
     const packageName = changeCase.paramCase(this.props.name);
 
+    const type = 'default'; // reserved for more types in the future
+
     this.fs.copyTpl(
-      glob.sync(this.templatePath('**'), { dot: true }),
+      glob.sync(this.templatePath(`${type}/**`), { dot: true }),
       this.destinationPath(path.join(this.props.path, packageName)),
       {
         packageName,

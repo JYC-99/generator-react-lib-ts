@@ -11,7 +11,7 @@ describe('generator-react-component-dev-kit', () => {
           'test-component/webpack.config.js',
           'test-component/jest.config.js',
           'test-component/tslint.json',
-          'test-component/src/index.tsx',
+          'test-component/src/index.ts',
           'test-component/package.json',
         ]);
       });
