@@ -8,7 +8,8 @@
     "target": "es5"
   },
   "include": [
-    "src/**/*",
+    "src",
+    "demo",
   ],
   "exclude": [
     "node_modules",

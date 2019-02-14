@@ -10,9 +10,23 @@ module.exports = merge(
   {
     mode: 'development',
     entry: [
-      './demo/index.dev.tsx' // the entry point of our app
+      './demo/index.tsx' // the entry point of our app
     ],
     devtool: 'cheap-module-eval-source-map',
+    module: {
+      rules: [
+        {
+          test: /\.(j|t)sx$/,
+          include: /node_modules/,
+          use: ['react-hot-loader/webpack'],
+        },
+        {
+          test: /\.js$/,
+          use: ["source-map-loader"],
+          enforce: "pre"
+        },
+      ],
+    },
     plugins: [
       new webpack.NamedModulesPlugin(), // prints more readable module names in the browser console on HMR updates
       new HtmlWebpackPlugin({
