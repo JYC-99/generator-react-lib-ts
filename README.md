@@ -21,9 +21,23 @@ yo react-lib-ts
 The following commands are available in your project:
 
 ```bash
+# build your library. The output is uglified umd bundle with source map files.
 yarn build
 
+# run tests. Powered by jest.
 yarn test
 
+# linting your code.
 yarn run lint
+
+# start local live demo page with HMR support.
+yarn run dev
 ```
+
+## Release notes
+
+### 1.1.0
+
+- Embrace babel to compile typescript. ts-loader deprecated.
+- Allow "yarn run dev" to start a live demo page on your localhost:8080 with HMR support.
+- Update docs
