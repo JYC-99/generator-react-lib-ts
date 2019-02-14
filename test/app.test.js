@@ -8,7 +8,9 @@ describe('generator-react-component-dev-kit', () => {
       .withPrompts({ name: 'test-component' })
       .then((dir) => {
         assert.file([
-          'test-component/webpack.config.js',
+          'test-component/webpack.config.common.js',
+          'test-component/webpack.config.prod.js',
+          'test-component/webpack.config.dev.js',
           'test-component/jest.config.js',
           'test-component/tslint.json',
           'test-component/src/index.ts',
