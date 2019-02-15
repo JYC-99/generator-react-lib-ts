@@ -36,6 +36,12 @@ yarn run dev
 
 ## Release notes
 
+### 1.2.0
+
+- Upgrading to react 16.8.2
+- Adding functional component with react hooks template
+- Fixed tsconfig issues and tslint issues.
+
 ### 1.1.0
 
 - Embrace babel to compile typescript. ts-loader deprecated.
