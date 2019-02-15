@@ -1,12 +1,10 @@
 {
   "name": "generator-react-lib-ts",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "index.js",
   "repository": {
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/BigYu/generator-react-lib-ts.git"
-    }
+    "type": "git",
+    "url": "https://github.com/BigYu/generator-react-lib-ts.git"
   },
   "license": "MIT",
   "keywords": [
