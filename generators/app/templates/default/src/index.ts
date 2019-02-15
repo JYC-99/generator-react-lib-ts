@@ -1,1 +1,3 @@
-export * from './entry';
+export * from './component';
+
+export * from './functional-component';
