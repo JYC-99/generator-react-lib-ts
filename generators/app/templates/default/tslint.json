@@ -13,7 +13,7 @@
       "no-bitwise": true,
       "no-conditional-assignment": true,
       "no-consecutive-blank-lines": false,
-      "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
+      "variable-name": false,
       "naming-convention": [
         true,
 
