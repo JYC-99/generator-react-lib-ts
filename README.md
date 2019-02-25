@@ -36,6 +36,10 @@ yarn run dev
 
 ## Release notes
 
+### 1.3.0
+
+- If you want to create a component based on fabric-ui, you will see the option to support it!
+
 ### 1.2.0
 
 - Upgrading to react 16.8.2
