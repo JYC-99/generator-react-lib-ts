@@ -24,7 +24,16 @@ module.exports = class extends Generator{
         name: 'path',
         message: 'input path for your library',
         default: '',
-      }
+      },
+      {
+        type: 'input',
+        name: 'componentType',
+        message:
+`What is the type of your component?
+  0 = Default
+  1 = With fabric-ui
+: `,
+      },
     ]).then(function(props) {
       this.props = props;
     }.bind(this));
@@ -39,11 +48,19 @@ module.exports = class extends Generator{
       return;
     }
 
-
     const exportName = changeCase.pascalCase(this.props.name);
     const packageName = changeCase.paramCase(this.props.name);
 
-    const type = 'default'; // reserved for more types in the future
+    const translateOptionToComponentType = (option) => {
+      switch (option) {
+        case '1':
+          return 'fabric-ui';
+        default:
+          return 'default';
+      }
+    };
+
+    const type = translateOptionToComponentType(this.props.componentType);
 
     this.fs.copyTpl(
       glob.sync(this.templatePath(`${type}/**`), { dot: true }),
