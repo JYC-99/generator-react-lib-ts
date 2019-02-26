@@ -33,6 +33,7 @@ module.exports = class extends Generator{
   0 = Default
   1 = With fabric-ui
 : `,
+        default: '0',
       },
     ]).then(function(props) {
       this.props = props;

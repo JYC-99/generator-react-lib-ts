@@ -15,6 +15,10 @@ You may want to install them globally if you are going to use them directly in t
 ```bash
 # make sure yo and generator-react-lib-ts is installed globally or let npm/scripts to do it.
 yo react-lib-ts
+
+# Then the generator will ask you to input the name of your library, the path for your lib folder,
+# and let you choose the type for your library.
+
 ```
 ## Usage
 
