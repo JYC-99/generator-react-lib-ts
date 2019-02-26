@@ -47,7 +47,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "office-ui-fabric-react": "^6.141.0"
+    "office-ui-fabric-react": "6.143.0"
   },
   "peerDependencies": {
     "react": "^16.8.2",
