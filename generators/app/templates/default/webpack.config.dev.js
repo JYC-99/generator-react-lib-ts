@@ -33,5 +33,12 @@ module.exports = merge(
         template: 'demo/index.html'
       })
     ],
+    devServer: {
+      open: true,
+      overlay: {
+        warnings: true,
+        errors: true,
+      },
+    },
   }
 );
