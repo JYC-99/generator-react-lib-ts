@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack -p --config=webpack.config.prod.js",
     "test": "jest",
-    "lint": "tslint src/**/*.ts{,x} --project tsconfig.json",
+    "lint": "tslint -p .",
     "dev": "webpack-dev-server --config=webpack.config.dev.js --hot --inline"
   },
   "devDependencies": {
@@ -41,7 +41,7 @@
     "tslint-microsoft-contrib": "^6.0.0",
     "tslint-react": "^3.6.0",
     "tslint-react-a11y": "^1.0.0",
-    "typescript": "3.2.2",
+    "typescript": "3.3.3",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",

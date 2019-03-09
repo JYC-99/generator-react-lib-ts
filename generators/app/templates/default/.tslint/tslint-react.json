@@ -1,6 +1,7 @@
 {
   "extends": [
-    "tslint-react"
+    "tslint-react",
+    "tslint-react-a11y"
   ],
   "rules": {
     "jsx-no-multiline-js": false
