@@ -29,13 +29,12 @@
     "enzyme-to-json": "^3.3.5",
     "fork-ts-checker-webpack-plugin": "^0.5.2",
     "html-webpack-plugin": "^3.2.0",
-    "jest": "23.6.0",
+    "jest": "^24.1.0",
     "react": "^16.8.2",
     "react-dom": "npm:@hot-loader/react-dom",
     "react-hot-loader": "^4.6.5",
     "react-test-renderer": "^16.8.2",
     "source-map-loader": "^0.2.4",
-    "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-microsoft-contrib": "^6.0.0",
@@ -52,6 +51,12 @@
     "react-dom": "^16.8.2"
   },
   "resolutions": {
-		"@types/react": "^16.8.2"
-	}
+    "@types/react": "^16.8.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

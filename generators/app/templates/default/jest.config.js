@@ -1,11 +1,10 @@
 module.exports = {
-  preset: 'ts-jest',
   setupFiles: [
     '<rootDir>/setupTests.js'
   ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
   collectCoverageFrom: [
-    "**/*.{js,jsx}",
+    "**/*.{js,jsx,ts,tsx}",
     "!**/node_modules/**",
   ],
 };
