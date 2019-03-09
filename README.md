@@ -40,6 +40,11 @@ yarn run dev
 
 ## Release notes
 
+### 1.4.0
+
+- Test performance optimazation
+- Better tslint rules and tsconfig for better readibility(Not compatible with older rules)
+
 ### 1.3.0
 
 - If you want to create a component based on fabric-ui, you will see the option to support it!
