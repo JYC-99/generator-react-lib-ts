@@ -1,7 +1,7 @@
 import * as React from "react";
 
 export interface IExampleProps {
-  initialCount: number;
+  initialCount?: number;
 }
 
 interface IExampleStates {
