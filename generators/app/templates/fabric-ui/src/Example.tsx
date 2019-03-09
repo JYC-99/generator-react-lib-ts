@@ -36,7 +36,7 @@ export class Example extends React.PureComponent<
           checked={false}
           text="Button"
           onClick={this._handleClick}
-        />>
+        />
       </div>
     );
   }

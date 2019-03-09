@@ -14,6 +14,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new ForkTsCheckerWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      compilerOptions: {
+        // work around for: https://github.com/OfficeDev/office-ui-fabric-react/issues/7110
+        isolatedModules: false,
+      },
+    }),
   ],
 };
