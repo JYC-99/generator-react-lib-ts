@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { hot } from 'react-hot-loader';
 
-import { Example } from '../src/index';
+import { Example, SfcExample } from '../src/index';
 
 const Demo = () => (
-  <Example />
+  <div>
+    <Example />
+    <SfcExample />
+  </div>
 );
 
 export const App = hot(module)(Demo);

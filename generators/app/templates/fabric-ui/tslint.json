@@ -3,9 +3,11 @@
     "tslint:recommended",
     "./.tslint/tslint-react.json",
     "./.tslint/tslint-eslint.json",
-    "./.tslint/tslint-microsoft-contrib.json"
+    "./.tslint/tslint-microsoft-contrib.json",
+    "./.tslint/tslint-custom.json"
   ],
   "defaultSeverity": "error",
+  "rulesDirectory": "./.tslint/customTSLintRules",
   "rules": {
     "adjacent-overload-signatures": true,
     "align": [
@@ -235,7 +237,10 @@
     "no-trailing-whitespace": true,
     "no-unbound-method": true,
     "no-unnecessary-callback-wrapper": true,
-    "no-unnecessary-class": true,
+    "no-unnecessary-class": [
+      true,
+      "allow-static-only"
+    ],
     "no-unnecessary-initializer": true,
     "no-unnecessary-qualifier": true,
     "no-unnecessary-type-assertion": true,
@@ -353,7 +358,8 @@
       true,
       "ban-keywords",
       "check-format",
-      "allow-leading-underscore"
+      "allow-leading-underscore",
+      "allow-pascal-case"
     ],
     "whitespace": [
       true,

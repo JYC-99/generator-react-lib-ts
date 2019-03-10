@@ -1,12 +1,8 @@
 /** Jest test setup file. */
 
 const { configure } = require('enzyme');
-const { initializeIcons } = require('@uifabric/icons');
 const Adapter = require('enzyme-adapter-react-16');
 const ReactDOM = require('react-dom');
-
-// Initialize icons.
-initializeIcons('');
 
 // optional
 window.requestAnimationFrame = callback => {

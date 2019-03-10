@@ -40,6 +40,7 @@
     "tslint-microsoft-contrib": "^6.0.0",
     "tslint-react": "^3.6.0",
     "tslint-react-a11y": "^1.0.0",
+    "tslint-react-hooks": "^2.0.0-alpha.1",
     "typescript": "3.3.3",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
