@@ -3,12 +3,21 @@ Yeoman generator for react lib with typescript
 
 ## Installation
 
+Install Yeoman first:
+
 ```bash
-yarn add yo -D
-yarn add generator-react-lib-ts -D
+npm install -g yo
 ```
 
-You may want to install them globally if you are going to use them directly in the console.
+Then you can install this generator
+
+```bash
+npm install -g generator-react-lib-ts
+```
+
+Done!
+
+Of course you can also do it with Yarn or integrate it into your npm/yarn scripts
 
 ## Generating a new component
 
