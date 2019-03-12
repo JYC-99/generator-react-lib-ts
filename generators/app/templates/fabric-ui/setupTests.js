@@ -3,6 +3,10 @@
 const { configure } = require('enzyme');
 const Adapter = require('enzyme-adapter-react-16');
 const ReactDOM = require('react-dom');
+const { initializeIcons } = require('@uifabric/icons');
+
+// Initialize icons.
+initializeIcons('');
 
 // optional
 window.requestAnimationFrame = callback => {
