@@ -25,6 +25,14 @@ module.exports = merge(
           use: ["source-map-loader"],
           enforce: "pre"
         },
+        {
+          test: /\.scss$/,
+            use: [
+              "style-loader",
+              "css-loader",
+              "sass-loader"
+            ]
+        },
       ],
     },
     plugins: [
