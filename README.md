@@ -49,9 +49,13 @@ yarn run dev
 
 ## Release notes
 
+### 1.5.0
+
+- Sass support for custom styling.
+
 ### 1.4.0
 
-- Test performance optimazation
+- Test performance optimazation.
 - Better tslint rules and tsconfig for better readibility(Not compatible with older rules)
 
 ### 1.3.0
