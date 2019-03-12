@@ -1,11 +1,11 @@
-import 'jest';
-import * as React from 'react';
-import { shallow } from 'enzyme';
+import "jest";
+import * as React from "react";
+import { shallow } from "enzyme";
 
-import { Example, SfcExample } from '../src/index';
+import { Example, SfcExample } from "../src/index";
 
-describe('Example', () => {
-  it('renders correctly', () => {
+describe("Example", () => {
+  it("renders correctly", () => {
     const wrapper = shallow(
       <Example />,
     );
@@ -13,8 +13,8 @@ describe('Example', () => {
   });
 });
 
-describe('SfcExample', () => {
-  it('renders correctly', () => {
+describe("SfcExample", () => {
+  it("renders correctly", () => {
     const wrapper = shallow(
       <SfcExample />,
     );
