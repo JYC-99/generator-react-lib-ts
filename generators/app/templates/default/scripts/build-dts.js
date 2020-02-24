@@ -7,7 +7,8 @@ exec("tsc --declaration --emitDeclarationOnly", error => {
   if (!error) {
     dts.bundle({
       name: "index",
-      main: "dist/index.d.ts"
+      main: "dist/index.d.ts",
+      outputAsModuleFolder: true
     });
   }
 });
