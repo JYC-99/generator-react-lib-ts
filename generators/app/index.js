@@ -31,7 +31,6 @@ module.exports = class extends Generator{
         message:
 `What is the type of your component?
   0 = Default
-  1 = With fabric-ui
 : `,
         default: '0',
       },
@@ -54,8 +53,6 @@ module.exports = class extends Generator{
 
     const translateOptionToComponentType = (option) => {
       switch (option) {
-        case '1':
-          return 'fabric-ui';
         default:
           return 'default';
       }
