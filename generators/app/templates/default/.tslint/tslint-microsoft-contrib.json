@@ -1,12 +1,12 @@
 {
-  "extends": [
-    "tslint-microsoft-contrib"
-  ],
+  "extends": ["tslint-microsoft-contrib/recommended"],
   "rules": {
     "no-backbone-get-set-outside-model": false,
     "no-stateless-class": false,
-    "react-unused-props-and-state": false,
+    "react-unused-props-and-state": true,
     "export-name": true,
+    "no-duplicate-case": false,
+    "valid-typeof": false,
     "function-name": [
       true,
       {

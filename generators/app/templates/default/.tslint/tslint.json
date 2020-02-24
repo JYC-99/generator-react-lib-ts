@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint-plugin-prettier", "./tslint.base.json", "tslint-config-prettier"],
+  "lintOptions": {
+    "exclude": [
+      "**/build/**",
+      "**/deploy/**",
+      "**/deployscripts/**",
+      "**/node_modules/**",
+      "**/public/**",
+      "**/scripts/**"
+    ]
+  },
+  "rules": {
+    "prettier": true
+  }
+}
