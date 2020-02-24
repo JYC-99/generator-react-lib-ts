@@ -41,13 +41,21 @@ yarn build
 yarn test
 
 # linting your code.
-yarn run lint
+yarn lint
 
-# start local live demo page with HMR support.
-yarn run dev
+# start local storybook demos
+yarn storybook
+
+# build local static storybook output
+yarn build:demo
 ```
 
 ## Release notes
+
+### 2.0.0
+
+- Refresh the whole pipeline. Brand new build, lint processes.
+- Introduces storybook for better local develop experience.
 
 ### 1.5.0
 

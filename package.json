@@ -1,6 +1,6 @@
 {
   "name": "generator-react-lib-ts",
-  "version": "1.5.3",
+  "version": "2.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
